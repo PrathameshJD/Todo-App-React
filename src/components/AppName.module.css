@@ -1,0 +1,9 @@
+.todoHeading {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #2e7d32;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}

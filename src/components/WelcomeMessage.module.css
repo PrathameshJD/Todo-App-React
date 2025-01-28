@@ -1,0 +1,26 @@
+.welcomeMessage {
+  font-size: 1.6rem;
+  color: #757575;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 50px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.welcomeMessage span {
+  font-weight: 600;
+  color: #66bb6a;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

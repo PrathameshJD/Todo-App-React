@@ -1,0 +1,69 @@
+/* AddTodo.module.css */
+.container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jdRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.jdCol1, .jdCol2, .jdCol3 {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.jdCol1 input,
+.jdCol2 input,
+.jdCol3 button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.jdCol1 input {
+  margin-right: 10px;
+}
+
+.jdCol2 input {
+  margin-left: 10px;
+}
+
+.jdCol3 button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  min-width: 120px;
+}
+
+.jdCol3 button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .jdRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .jdCol1, .jdCol2, .jdCol3 {
+    margin: 10px 0;
+  }
+
+  .jdCol3 button {
+    width: 100%;
+  }
+}
